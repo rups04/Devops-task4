@@ -5,6 +5,7 @@ metadata:
   labels:
     app: myweb
 spec:
+  replicas: 3
   ports:
     - port: 80
       nodePort: 30105
