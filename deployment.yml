@@ -5,7 +5,6 @@ metadata:
   labels:
     app: myweb
 spec:
-  replicas: 3
   ports:
     - port: 80
       nodePort: 30105
@@ -21,6 +20,7 @@ kind: Deployment
 metadata:
     name: myweb
 spec:
+    replicas: 3
     selector:
           matchLabels:
               app: myweb
